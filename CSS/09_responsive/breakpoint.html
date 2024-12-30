@@ -15,6 +15,33 @@
             height: 100vh;
             background-color: #1a1a1a;
         }
+        .responsiv-div{
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            color: wheat;
+            text-align: center;
+            font-size: 24px;
+            background-color: #7e0a93;
+        }
+
+        @media (max-width:600px){
+            body{
+                align-items: flex-start;
+            }
+            .responsiv-div{
+                background-color: #3498db;
+            }
+        }
+
+        @media (min-width: 601px) and (max-width: 1024px){
+            body{
+                align-items: center;
+            }
+            .responsiv-div{
+                background-color: #e74c3c;
+            }
+        }
     </style>
 </head>
 <body>
