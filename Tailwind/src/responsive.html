@@ -1,12 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive</title>
-    <link rel="stylesheet" href="output.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link href="./output.css" rel="stylesheet"> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
-    <h1 class="sm:text-3xl text-sm">Learn about Responsive design</h1>
+<body>
+    <h1 class="m-4 text-lg underline">This layout divides in 2 equal halfs in both big and samall screen</h1>
+    <div class="grid sm:grid-cols-2 gap-4 m-4 grid-cols-2">
+      <div class="min-h-[100px] rounded-lg shadow bg-orange-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-teal-500"></div>
+    </div> 
+
+    <h1 class="m-4 text-lg underline">This layout divides in 4 equal halfs in big screen and single in samall screen</h1>
+    <div class="grid sm:grid-cols-4 gap-4 m-4 ">
+      <div class="min-h-[100px] rounded-lg shadow bg-orange-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-teal-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-red-500"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-purple-500"></div>
+    </div>
+    
+    <h1 class="m-4 text-lg underline">This layout divides in 2 parts of different size for big screen and singles for small screen</h1>
+    <div class="grid sm:grid-cols-12 gap-4 m-4 ">
+      <div class="min-h-[100px] rounded-lg shadow bg-orange-500 sm:col-span-2"></div>
+      <div class="min-h-[100px] rounded-lg shadow bg-teal-500 sm:col-span-10"></div>
+    </div>
+    
+    <h1 class="m-4 text-lg underline">This layout divides in 3 parts of different size for big screen and removes the sides small part just keeping the larger portion for small screen</h1>
+    <div class="grid  gap-4 m-4 sm:grid-cols-12 ">
+        <div class="min-h-[100px] rounded-lg shadow bg-orange-500 sm:col-span-2 sm:block hidden"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-teal-500 sm:col-span-8"></div>
+        <div class="min-h-[100px] rounded-lg shadow bg-purple-500 sm:col-span-2 sm:block hidden"></div>
+    </div>
 </body>
 </html>
