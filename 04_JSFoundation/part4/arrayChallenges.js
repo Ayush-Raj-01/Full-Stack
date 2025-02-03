@@ -29,46 +29,66 @@ teaTypes[1] = "jasmine tea";
    Add `"Berlin"` to the array using the `push` method.
 */
 
-
+let citiesVisited = ["Mumbai" , "Sydney"];
+citiesVisited.push("Berlin");  // .push is used to add in the end
+console.log(citiesVisited);
 
 /* 
 5. You have an array named `teaOrders` with `"chai"`, `"iced tea"`, `"matcha"`, and `"earl grey"`. 
    Remove the last element of the array using the `pop` method and store it in a variable named `lastOrder`.
 */
 
-
+let teaOrders = ["chai" , "iced tea" , "matcha" , "earl grey"];
+teaOrders.pop();  // .pop() is used to remove the last element 
+console.log(teaOrders);
 
 /* 
 6. You have an array named `popularTeas` containing `"green tea"`, `"oolong tea"`, and `"chai"`. 
    Create a soft copy of this array named `softCopyTeas`.
 */
 
-
+let popularTeas = ["green tea" , "oolong tea" , "chai"]
+let softCopyTeas = popularTeas;
+console.log(softCopyTeas);
+popularTeas.pop();
+console.log(popularTeas) // the changes occurs in both
+console.log(softCopyTeas);
 
 /* 
 7. You have an array named `topCities` containing `"Berlin"`, `"Singapore"`, and `"New York"`. 
    Create a hard copy of this array named `hardCopyCities`.
 */
 
-
+let topCities = ["Berlin" , "Singapore" , "Ney York"]
+let hardCopyCities = [...topCities] // [...name] make an hardcopy of name file and by changing name it will not change
+console.log(hardCopyCities)
+topCities.pop()
+console.log(topCities)
+console.log(hardCopyCities)
 
 /* 
 8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`. 
    Merge these two arrays into a new array named `worldCities`.
 */
 
-
+let europeanCities = ["Paris" , "Rome"]
+let asianCities = ["Tokyo" , "Bangkok"]
+let worldCities = europeanCities.concat(asianCities)
+console.log(worldCities)
 
 /* 
 9. You have an array named `teaMenu` containing `"masala chai"`, `"oolong tea"`, `"green tea"`, and `"earl grey"`. 
    Find the length of the array and store it in a variable named `menuLength`.
 */
 
-
+let teaMenu = ["Masala chai" , "oolong chai" , "green tea" , "earl tea"]
+let menuLength = teaMenu.length
 
 /* 
 10. You have an array named `cityBucketList` containing `"Kyoto"`, `"London"`, `"Cape Town"`, and `"Vancouver"`. 
     Check if `"London"` is in the array and store the result in a variable named `isLondonInList`.
 */
 
-
+let cityBucketList = ["Kyoto" , "London" , "Cape Town" , "Vancouver"]
+let isLondonInList = cityBucketList.includes("London");
+console.log(isLondonInList)
