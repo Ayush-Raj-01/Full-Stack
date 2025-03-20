@@ -1,4 +1,4 @@
-/*
+ /*
 1. Write a 'while' loop that calculates the sum of all numbers from 1 to 5 and store the result in a variable named 'sum'.
 */ 
 
@@ -29,6 +29,7 @@ console.log(countdown)
 */
 
     // RUN THIS CODE ON CONSOLE OF A CHROME
+
 // let teacollection = [];
 // let tea
 
@@ -60,7 +61,7 @@ let multipliedNumber = []
 let number = [2, 4, 6]
 for (let l = 0; l < number.length; l++) {
     // multipliedNumber.push(takeNumber)
-    // takeNumber = number[l] * 2;           // this cane also be written as
+    // takeNumber = number[l] * 2;           // these lines can also be written as
 
     multipliedNumber.push(number[l] * 2)
 }
