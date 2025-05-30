@@ -15,6 +15,6 @@ let tesla = {
     driver: "AI"
 }
 
-Object.setPrototypeOf( tesla , genericCar )     // we ecan also use '.setPrototypeOf( will acces , will be accesed )' instead of '__proto__' 
+Object.setPrototypeOf( tesla , genericCar )     // we can also use '.setPrototypeOf( will acces , will be accesed )' instead of '__proto__' || this is used in object 
 
 console.log('Tesla' , Object.getPrototypeOf(tesla))   
