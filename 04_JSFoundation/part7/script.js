@@ -1,0 +1,5 @@
+console.log("Hello from the script")
+console.log(window)
+console.log(location.hostname)
+console.log(location.href)
+console.log(document.getElementsByTagName("h1"))
