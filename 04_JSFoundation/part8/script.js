@@ -44,3 +44,37 @@ document.getElementById("removeLastTask").addEventListener("click" , function ()
 document.getElementById("clickMeButton").addEventListener("click" , function () {
     alert("DOM Example")
 })
+
+
+// EXAMPLE - 7
+
+document.getElementById("teaList").addEventListener("click" , function (event) {
+    if (event.target && event.target.matches(".teaItem")) {
+        alert("You selected: " + event.target.textContent)
+    }
+})
+
+
+// example - 8
+
+document.getElementById("feedbackForm").addEventListener("submit" , function (event) {
+    event.preventDefault();
+    let feedback = document.getElementById("feedbacklnput").value;
+    console.log(feedback)
+    document.getElementById("feedbackDisplay").textContent = `Feedback is: ${feedback}`
+})
+
+
+// example - 9
+
+document.addEventListener('DOMContentLoaded' , function () {
+    document.getElementById('domStatus').textContent = "DOM fully loaded"
+})
+
+
+// example - 10
+
+document.getElementById("toogleHighlight").addEventListener("click" , function () {
+    let descriptionText = document.getElementById("descriptionText")
+    descriptionText.classList.toggle("highlight")
+})
