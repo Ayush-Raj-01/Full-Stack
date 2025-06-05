@@ -1,4 +1,4 @@
-        // prototypal inheritance is just inheritance being done in the prototypes
+        // prototypal inheritance is just inheritance being done in the prototypes (Objects inherit directly from other objects)
 
 
 function Person(name) {
